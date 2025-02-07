@@ -19,20 +19,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!---tailwind-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customYellow: 'hsl(47, 88%, 63%)', // Your custom color
+          },
+        },
+      },
+    };
+  </script>
 </head>
-<body >
+<body class="bg-customYellow flex min-h-full items-end justify-center p-4 lm:items-center sm:p-0">
+  <div class="w-[400px] h-[500px] bg-white p-5 border-2 border-black rounded-lg bg-cyan-500 shadow-lg">
 
-  <div>
-    <img src="" alt="">
+    <div class="">
+      <img src="assets\images\illustration-article.svg" alt="Blog Preview" class="w-full rounded-lg">
+    </div>
+
+    <div>
       <h3>Learning</h3>
+    </div>
 
+    <div>
       Published 21 Dec 2023
+    </div>
 
+    <div>
       <h1>HTML & CSS foundations</h1>
+    </div>
 
+    <div>
       These languages are the backbone of every website, defining structure, content, and presentation.
+    </div>
 
-      Greg Hooper
+      <!--Avatar-->
+      <div class="flex justify-start">
+        <img src="assets\images\image-avatar.webp" alt="Blog Preview">
+        Greg Hooper
+      </div>
       
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
